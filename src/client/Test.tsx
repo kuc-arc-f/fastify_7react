@@ -11,7 +11,7 @@ function Page(){
   <div>
     <Head />
     <hr />
-    <h1>client/Tes !!!</h1>
+    <h1 className="text-4xl font-bold">Test</h1>
   </div>
   );
 }

@@ -2,9 +2,11 @@
   "type": "module",
   "scripts": {
     "dev": "NODE_ENV=develop vite dev",
-    "build": "vite build && node build.js",
+    "build": "vite build && node build.js && npm run build:css",
+    "build:clean": "rimraf dist && rimraf public/static",
+    "build:test": "npm run build:clean && vite build && node build.js && npm run build:css",
+    "build:css": "npx tailwindcss -i ./src/main.css -o ./public/static/main.css",
     "watch": "npx nodemon",
-    "build:test": "vite build && vite build --mode client",
     "test": "ts-node src/index.ts"
   },
   "dependencies": {
@@ -22,7 +24,8 @@
     "@types/react-dom": "^18.2.8",
     "autoprefixer": "^10.4.17",
     "nodemon": "^3.0.3",
-    "postcss": "^8.4.34",
+    "postcss": "^8.4.35",
+    "rimraf": "^5.0.5",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.3.3",
     "vite": "^4.5.2",

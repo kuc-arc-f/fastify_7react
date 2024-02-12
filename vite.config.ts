@@ -11,9 +11,6 @@ export default defineConfig(({ mode }) => {
         lib: {
           entry: [
             './src/client.tsx',
-            './src/client/about.tsx',
-            './src/client/contact.tsx',
-            './src/client/Test.tsx',
           ],
           formats: ['es'],
           fileName: '[name]',

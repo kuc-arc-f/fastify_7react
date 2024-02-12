@@ -14,7 +14,7 @@ export default function Page() {
             <a href="/about">[ about ]</a>
             <a href="/contact">[ contact ]</a>
             <hr />
-            <h1>Hello!!!</h1>
+            <h1 className="text-4xl font-bold">Hello!!!</h1>
         </body>
     </html>
     );
