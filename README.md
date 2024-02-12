@@ -6,7 +6,7 @@
 
  date    : 2024/02/09   
 
- update  : 2024/02/11 
+ update  : 2024/02/12
 
 ***
 ### Summary
@@ -18,6 +18,9 @@ fastify + vite, React MPA sample
 * react- build
 ```
 node build.js
+
+#watch
+yarn watch
 ```
 * fastify-build, start
 ```
