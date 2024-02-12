@@ -4,9 +4,10 @@ import {Link } from 'react-router-dom';
 function Page() {
     return (
     <div>
-        <a href="/">Home</a>
+        <a href="/">[ Home ]</a>
         <a href="/about">&nbsp; [ about ]</a>
         <a href="/contact">&nbsp; [ contact ]</a>
+        <a href="/test">&nbsp; [ test ]</a>
         <hr />
     </div>
     );

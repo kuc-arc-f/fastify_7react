@@ -11,16 +11,13 @@ function Page(){
   <div>
     <Head />
     <hr />
-    <h1>client/Test.txt</h1>
+    <h1>client/Tes !!!</h1>
   </div>
   );
 }
 //
 ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <Page />
-    </BrowserRouter>
-  </React.StrictMode>
+  <Page />
 );
-//
+/*
+*/
