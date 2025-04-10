@@ -2,7 +2,7 @@
 
  Version: 0.9.1
 
- Author  : Kouji Nakashima / kuc-arc-f.com
+ Author  :
 
  date    : 2024/02/09   
 
@@ -11,17 +11,11 @@
 ***
 ### Summary
 
-fastify + vite, React MPA sample
+fastify , React MPA (multi page)
 
 ***
 ### build
-* react- build
-```
-node build.js
 
-#watch
-yarn watch
-```
 * fastify-build, start
 ```
 yarn dev
