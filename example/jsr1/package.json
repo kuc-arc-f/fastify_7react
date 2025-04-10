@@ -1,0 +1,36 @@
+{
+  "type": "module",
+  "scripts": {
+    "dev": "NODE_ENV=develop nodemon",
+    "build": "npm run build:server && node build.js && npm run build:css",
+    "build:server": "npx rolldown -c rolldown.config.js",
+    "build:clean": "rimraf dist && rimraf public/static",
+    "build:css": "npx tailwindcss -i ./src/main.css -o ./public/static/main.css",
+    "start": "NODE_ENV=production node dist/index.js"
+  },
+  "dependencies": {
+    "@fastify/static": "^7.0.0",
+    "@kotan-kndev/re25-0331page1": "npm:@jsr/kotan-kndev__re25-0331page1@^0.9.5",
+    "@kotan-kndev/sv-page3-250402": "npm:@jsr/kotan-kndev__sv-page3-250402@^0.9.2",
+    "axios": "^1.6.5",
+    "fastify": "^4.26.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.21.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.13",
+    "@types/node": "^18.14.6",
+    "@types/react": "^18.2.23",
+    "@types/react-dom": "^18.2.8",
+    "autoprefixer": "^10.4.17",
+    "nodemon": "^3.0.3",
+    "postcss": "^8.4.35",
+    "rimraf": "^5.0.5",
+    "rolldown": "^1.0.0-beta.7",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.3.3",
+    "vite": "^4.5.2",
+    "vite-plugin-node": "^3.1.0"
+  }
+}
